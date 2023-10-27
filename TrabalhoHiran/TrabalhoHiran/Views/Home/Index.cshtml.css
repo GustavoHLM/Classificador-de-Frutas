@@ -1,0 +1,82 @@
+﻿#ContainerPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    max-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: white;
+    padding: 50px;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.classification {
+    background: #66B96E;
+    border-radius: 20px;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
+.classe-container {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 200px;
+}
+
+.classe-details {
+    text-align: center;
+}
+
+.erros-container {
+    /* Estilize de acordo com sua preferência */
+}
+
+.upload-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.upload-button {
+    display: flex;
+    justify-content: center;
+    background: #66B96E;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}

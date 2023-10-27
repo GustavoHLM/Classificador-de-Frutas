@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model ImageModel
+
+<title>@ViewData["Title"]</title>
+
+<div id="ContainerPrincipal">
+    <div class="container">
+        @if (Model.ImageFile != null)
+        {
+            @for (var i = 0; i < Model.ImageFile.Count; i++)
+            {
+                <div class="card">
+                    <img class="image" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImageFile[i])" alt="Imagem">
+                    <div class="classification" style="@(Model.classificacao[i] == "errado" ? "color:red" : "")">@Model.classificacao[i]</div>
+                </div>
+            }
+        } 
+    </div>
+    @if (Model.classeContext != null)
+    {
+        @for (var i = 0; i < Model.classeContext.Count; i++)
+        {
+            <div class="classe-container">
+                <div class="classe-details">
+                    <label>Classe: @Model.classeContext[i].classe</label>
+                    <label>Acertos: @Model.classeContext[i].acertos</label>
+                </div>
+            </div>
+        }
+    }
+    <div class="erros-container">
+    </div>
+</div>
+<button class="upload-button" style="background-color:red; color:white">Erros da IA: @Model.erros</button>
+
+<div class="upload-button-container">
+    <form method="post" enctype="multipart/form-data" asp-action="UploadImage" asp-controller="Home">
+        <input class="upload-button" type="file" asp-for="ImageUp" id="fileInput">
+        <input class="upload-button" type="submit" value="Enviar Imagem">
+    </form>
+</div>

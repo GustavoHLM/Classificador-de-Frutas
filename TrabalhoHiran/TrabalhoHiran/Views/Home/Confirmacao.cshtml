@@ -1,0 +1,23 @@
+﻿@model ImageModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmação da Classificação</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmação da Classificação</h1>
+
+        <img class="image" src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImageData)" alt="Imagem">
+
+        <p class="classification">Classificação: @Model.classificacaoAux</p>
+
+        <form asp-controller="Home" asp-action="confirmado" method="post">
+            <input type="hidden" asp-for="classificacaoAux" value="@Model.classificacaoAux" />
+            <button type="submit">Correto</button>
+            <a asp-action="Cancelar">Errado</a>
+        </form>
+    </div>
+</body>
+</html>
