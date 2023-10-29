@@ -22,7 +22,7 @@ h1[b-i1rhycsk0j] {
 .image[b-i1rhycsk0j] {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 40%;
 }
 
 .classification[b-i1rhycsk0j] {
@@ -55,7 +55,6 @@ a[b-i1rhycsk0j] {
 /* _content/TrabalhoHiran/Views/Home/Index.cshtml.rz.scp.css */
 #ContainerPrincipal[b-cli4up69mi] {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: white;
     padding: 50px;
@@ -65,10 +64,9 @@ a[b-i1rhycsk0j] {
 .container[b-cli4up69mi] {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     background: white;
     padding: 50px;
-    max-height: 50vh;
+    max-height: 60vh;
     overflow: auto;
 }
 
@@ -91,6 +89,12 @@ a[b-i1rhycsk0j] {
     margin: 10px auto;
 }
 
+.container2[b-cli4up69mi]{
+    display:flex;
+    flex-wrap:wrap;
+    overflow:auto;
+}
+
 .classification[b-cli4up69mi] {
     background: #66B96E;
     border-radius: 20px;
@@ -107,6 +111,7 @@ a[b-i1rhycsk0j] {
     margin: 10px;
     padding: 20px;
     max-width: 200px;
+    height:100px;
 }
 
 .classe-details[b-cli4up69mi] {
@@ -121,7 +126,7 @@ a[b-i1rhycsk0j] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin-bottom: 10px;
 }
 
 .upload-button[b-cli4up69mi] {
@@ -133,7 +138,9 @@ a[b-i1rhycsk0j] {
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top:10px;
+    margin-left:20px;
+
 }
 /* _content/TrabalhoHiran/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
