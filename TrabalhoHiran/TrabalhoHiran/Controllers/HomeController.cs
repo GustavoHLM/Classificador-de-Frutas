@@ -13,8 +13,8 @@ namespace TrabalhoHiran.Controllers
 {
     public class HomeController : Controller
     {
-        string endpointUrl = "https://bancoimg.documents.azure.com:443/";
-        string primaryKey = "cHl0pMxOIyltMoLdTfZEnufvnp2GjT3RuLdcau4NJ5xYvcvEsjmy7R9kZX6rjCCljvNCJOrznIlGACDbFawXbg==";
+        string endpointUrl = "";
+        string primaryKey = "";
         string databaseId = "bancoimg";
         string containerId = "imagem";
 
