@@ -1,3 +1,5 @@
-O trabalho foi feito na disciplina de banco de dados 2 em parceria com a disciplica Inteligencia Artificial.
+Este projeto foi realizado como parte das disciplinas de Banco de Dados II e Inteligência Artificial. 
 
-O projeto à fim de apresentar em seminario foi obersvado em fazer todas as operações na Classe Controller para fins academicos. É valido ressaltar que cada metodo futuramente estará em suas respectivas camadas para seguir a arquitetura MVC .
+Foi desenvolvido com o objetivo de ser apresentado em um seminário acadêmico. Durante a fase inicial do projeto, todas as operações foram implementadas na Classe Controller para fins de demonstração acadêmica. No entanto, é importante ressaltar que, no futuro, cada método será realocado para suas respectivas camadas, seguindo a arquitetura MVC, a fim de garantir uma estrutura de projeto mais robusta e eficiente.
+
+O projeto é um classificador de frutas que utiliza uma Rede Neural Convolucional (CNN), desenvolvida em Python, o modelo é capaz de classificar imagens de frutas enviadas pelos usuários através de uma interface de front-end. Após a classificação, a imagem, juntamente com a classificação gerada pelo modelo e a indicação de se a classificação foi correta ou não, são armazenadas em um banco de dados. Este sistema permite uma interação contínua e dinâmica com os usuários, ao mesmo tempo que aprimora a precisão e eficiência do modelo de classificação.
